@@ -32,8 +32,8 @@ if __name__ == "__main__":
     func: Callable | None = None
     if args.numba:
 
-from numba_pi import calculate_pi_numba
-func = calculate_pi_numba
+        from numba_pi import calculate_pi_numba
+        func = calculate_pi_numba
     else:
         func = calculate_pi
 
